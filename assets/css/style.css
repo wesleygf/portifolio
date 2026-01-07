@@ -80,6 +80,7 @@ nav a.active {
   color: var(--amber-flame);
   text-decoration: underline;
 }
+
 #about article {
   display: flex;
   align-items: center;
@@ -105,6 +106,7 @@ footer {
   background-color: var(--blue-green);
   font-weight: bold;
   text-align: center;
+  border-top: 3px solid var(--amber-flame);
 }
 
 footer section {
@@ -129,24 +131,25 @@ footer img:hover {
     hue-rotate(1deg) brightness(105%) contrast(101%);
 }
 .main_contato {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    width: 90%;
-    margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 90%;
+  margin: 2rem auto;
 }
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 1.5rem;
-    border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
 }
-form input, textarea {
-    padding: 0.5rem;
-    border-radius: 0.75rem;
-    border: none;
-    font-size: 1rem;
+form input,
+textarea {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  border: none;
+  font-size: 1rem;
 }
 form input:focus,
 textarea:focus {
@@ -154,41 +157,47 @@ textarea:focus {
 }
 
 textarea {
-    resize: none;
-    height: 5rem;
+  resize: none;
+  height: 5rem;
 }
 form button {
-    background-color: var(--cerulean);
-    color: var(--white);
-    padding: 0.75rem;
-    border: 1px solid var(--blue-green);
-    border-radius: 0.75rem;
-    font-weight: 700;
-    cursor: pointer;
+  background-color: var(--cerulean);
+  color: var(--white);
+  padding: 0.75rem;
+  border: 1px solid var(--blue-green);
+  border-radius: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 form button:hover {
-    background: var(--blue-green);
+  background: var(--amber-glow);
+  border-color: var(--princeton-orange);
 }
 form span {
-    color: var(--amber-glow);
-    font-size: 0.75rem;
+  color: var(--amber-glow);
+  font-size: 0.75rem;
 }
-.article_mapa{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: 0.75rem;
+.article_mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
 }
 .article_mapa address {
-    width: 75%;
+  width: 75%;
 }
 .article_mapa address p {
-    font-weight: 600;
+  font-weight: 600;
 }
 .article_mapa iframe {
-    align-self: center;
+  align-self: center;
+}
+#mapa {
+  width: 100%;
+  height: 300px;
+  border: 0;
 }
