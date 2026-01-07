@@ -16,11 +16,13 @@
   --amber-glow: #fd9e02ff;
   --princeton-orange: #fb8500ff;
 }
-
 body {
   font-family: sans-serif;
   color: var(--deep-space-blue);
   background: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -52,6 +54,9 @@ p {
 section {
   width: 90%;
   margin: 2rem auto;
+}
+main { 
+    flex: 1; 
 }
 header {
   background: var(--cerulean);
@@ -107,6 +112,7 @@ footer {
   font-weight: bold;
   text-align: center;
   border-top: 3px solid var(--amber-flame);
+  margin-top: auto;
 }
 
 footer section {
