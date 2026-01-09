@@ -1,5 +1,7 @@
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]\w+)*(\.\w{2,3})+$/;
 
+let formulario = document.querySelector("#formulario");
+
 formulario.addEventListener('submit', function(event) {
     event.preventDefault();
 
